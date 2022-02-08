@@ -1,6 +1,6 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
-import {colors, fonts, windowWidth} from '../../utils';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import { colors, fonts, windowWidth } from '../../utils';
 
 export default function MyHeader() {
   return (
@@ -26,18 +26,7 @@ export default function MyHeader() {
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-        <Image
-          source={require('../../assets/poltekes.png')}
-          style={{width: '30%', height: 120, resizeMode: 'contain'}}
-        />
-        <Image
-          source={require('../../assets/logo.png')}
-          style={{width: '30%', height: 120, resizeMode: 'contain'}}
-        />
-        <Image
-          source={require('../../assets/kemenkes.png')}
-          style={{width: '30%', height: 50, resizeMode: 'contain'}}
-        />
+
       </View>
     </View>
   );

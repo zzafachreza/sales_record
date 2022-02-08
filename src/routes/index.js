@@ -4,7 +4,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import {
   Splash,
   Home,
-  Login
+  Login,
+  MenuProduct,
+  MenuCustomer
 } from '../pages';
 import { colors } from '../utils';
 
@@ -39,20 +41,35 @@ export default function Router() {
           headerShown: false,
         }}
       />
-      {/* 
+
       <Stack.Screen
-        name="MenuOrangTua"
-        component={MenuOrangTua}
+        name="MenuProduct"
+        component={MenuProduct}
         options={{
           headerShown: true,
-          headerTitle: 'Orang Tua',
+          headerTitle: 'Data Product',
           headerStyle: {
             backgroundColor: colors.primary,
           },
           headerTintColor: '#fff',
         }}
 
-      /> */}
+      />
+
+
+      <Stack.Screen
+        name="MenuCustomer"
+        component={MenuCustomer}
+        options={{
+          headerShown: true,
+          headerTitle: 'Data Customer',
+          headerStyle: {
+            backgroundColor: colors.primary,
+          },
+          headerTintColor: '#fff',
+        }}
+
+      />
 
 
 

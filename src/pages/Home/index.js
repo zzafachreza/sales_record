@@ -20,38 +20,6 @@ import 'intl';
 import 'intl/locale-data/jsonp/en';
 import MyDashboard from '../../components/MyDashboard';
 
-const DataKategori = ({ icon, nama, onPress, img = require('../../assets/hospital.png') }) => {
-  return (
-    <TouchableOpacity
-      onPress={onPress}
-      style={{
-        backgroundColor: colors.white,
-        padding: 5,
-        borderRadius: 20,
-        width: windowWidth / 5,
-        elevation: 5,
-      }}>
-      <View style={{ width: windowWidth / 6, overflow: 'hidden', height: 60, backgroundColor: colors.white, borderRadius: 40, justifyContent: 'center', alignContent: 'center' }}>
-        <Image source={img} style={{
-          width: 40,
-          height: 40,
-          alignSelf: 'center'
-        }} />
-      </View>
-      <View>
-        <Text
-          style={{
-            fontFamily: fonts.secondary[600],
-            color: colors.black,
-            fontSize: windowWidth / 42,
-            textAlign: 'center',
-          }}>
-          {nama}
-        </Text>
-      </View>
-    </TouchableOpacity>
-  );
-};
 
 
 export default function Home({ navigation }) {

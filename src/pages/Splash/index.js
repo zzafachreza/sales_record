@@ -59,21 +59,18 @@ export default function Splash({ navigation }) {
     <View
       style={{
         flex: 1,
-        backgroundColor: colors.white,
+        backgroundColor: colors.primary,
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <Animated.Image
+      <Image
         source={require('../../assets/logo.png')}
-        style={
-          ({
-            width: 300,
-            height: 220,
-          },
-          {
-            transform: [{ scale: top }],
-          })
-        }
+        style={{
+          width: 250,
+          height: 250,
+        }}
+
+
       />
     </View>
   );

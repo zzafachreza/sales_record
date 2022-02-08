@@ -66,8 +66,8 @@ export default function ({ navigation }) {
   }
 
   return (
-    <ScrollView style={{ padding: 10, flex: 1 }}>
-      <View style={{ justifyContent: 'center', alignItems: 'center' }}>
+    <ScrollView style={{ flex: 1 }}>
+      <View style={{ justifyContent: 'center', alignItems: 'center', backgroundColor: colors.primary, padding: 10 }}>
         <Image
           source={require('../../assets/logo.png')}
           style={{ width: 100, height: 90 }}
@@ -76,7 +76,7 @@ export default function ({ navigation }) {
           style={{
             fontFamily: fonts.secondary[600],
             fontSize: windowWidth / 10,
-            color: colors.black,
+            color: colors.white,
           }}>
           SALES RECORD
         </Text>
@@ -84,7 +84,7 @@ export default function ({ navigation }) {
           style={{
             fontFamily: fonts.secondary[400],
             fontSize: windowWidth / 30,
-            color: colors.black,
+            color: colors.white,
           }}>
           Aplikasi Untuk Melakukan Sales Record
         </Text>

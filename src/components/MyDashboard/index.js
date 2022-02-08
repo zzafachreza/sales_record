@@ -90,7 +90,7 @@ export default function MyDashboard() {
                         justifyContent: 'center',
                     }}>
                     <TouchableOpacity
-                        onPress={() => navigation.navigate('Scanner')}
+                        onPress={() => navigation.navigate('MenuProduct')}
                         style={{
                             flex: 1,
                             borderRadius: 10,
@@ -103,7 +103,7 @@ export default function MyDashboard() {
                         }}>
                         <Icon
                             type="ionicon"
-                            name="cube-outline"
+                            name="camera-outline"
                             size={windowWidth / 5}
                             color={colors.white}
                         />
@@ -127,7 +127,7 @@ export default function MyDashboard() {
                         style={{
                             flex: 1,
                             borderRadius: 10,
-                            backgroundColor: colors.secondary,
+                            backgroundColor: colors.primary,
                             justifyContent: 'center',
                             alignItems: 'center',
                             marginRight: 10,
@@ -160,11 +160,11 @@ export default function MyDashboard() {
                         justifyContent: 'center',
                     }}>
                     <TouchableOpacity
-                        onPress={() => navigation.navigate('Kamera')}
+                        onPress={() => navigation.navigate('MenuCustomer')}
                         style={{
                             flex: 1,
                             borderRadius: 10,
-                            backgroundColor: colors.background,
+                            backgroundColor: colors.primary,
                             justifyContent: 'center',
                             alignItems: 'center',
                             marginTop: windowHeight / 20,
@@ -196,7 +196,7 @@ export default function MyDashboard() {
                         style={{
                             flex: 1,
                             borderRadius: 10,
-                            backgroundColor: colors.tertiary,
+                            backgroundColor: colors.primary,
                             justifyContent: 'center',
                             alignItems: 'center',
                             marginLeft: 10,
